@@ -90,7 +90,7 @@
 
 					<!-- Start Single slide -->
 					<div class="mu-featured-slider-single">
-						<img src="assets/images/slider-img-1.jpg">
+						<img src="https://rawcdn.githack.com/KhanIsEzz/HackathonGenesys/tree/master/assets/images/slider-img-1.jpg">
 						<div class="mu-featured-slider-content">
 							<h1>Welcome to EVA Food Reviews</h1>
 							<p></p>
@@ -101,7 +101,7 @@
 
 					<!-- Start Single slide -->
 					<div class="mu-featured-slider-single">
-						<img src="assets/images/slider-img-2.jpg">
+						<img src="https://rawcdn.githack.com/KhanIsEzz/HackathonGenesys/tree/master/assets/images/slider-img-2.jpg">
 						<div class="mu-featured-slider-content">
 							<h1>Any Cuisine / Restaurant related questions, We can answer.</h1>
 							<p></p>
@@ -112,7 +112,7 @@
 
 					<!-- Start Single slide -->
 					<div class="mu-featured-slider-single">
-						<img src="assets/images/slider-img-3.jpg">
+						<img src="https://rawcdn.githack.com/KhanIsEzz/HackathonGenesys/tree/master/assets/images/slider-img-3.jpg">
 						<div class="mu-featured-slider-content">
 							<h1>Only reviews that are catered to your needs will be shown.</h1>
 							<p></p>
@@ -227,7 +227,9 @@
 										<div class="mu-contact-left">
 										<div id="form-messages"></div>
 											<form class="mu-contact-form" name="search" action="#" method="post">
-												<div class="form-group">              
+												<div class="form-group">
+													{% csrf_token %}
+    													{{ form }}              
 													<input type="text" class="form-control" placeholder="Search.." id="search" name="search" required> 
 													<button type="submit" class="mu-send-msg-btn"><span>SUBMIT</span></button>
 												</div>
