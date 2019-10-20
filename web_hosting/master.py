@@ -4,6 +4,7 @@ form = cgi.FieldStorage()
 searchterm = form.getvalue('search')
 question = searchterm 
 print(question)
+review = "This is a review"
 
 #get answer
 
@@ -21,3 +22,6 @@ print(jsonResponse)
 #get best customer reviews
 
 #update client view
+
+#upload customer reviews
+
